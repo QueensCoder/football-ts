@@ -23,3 +23,9 @@ set up config
         make an index.ts and add console.log('anything')
 
         npm start - if fails exit nodemon and run again, first compile might cause file to build after nodemon tries to read index.js
+
+Type definition files for libraries
+
+    need ts def file for standard lib imports
+
+    npm i @types/node
