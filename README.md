@@ -29,3 +29,9 @@ Type definition files for libraries
     need ts def file for standard lib imports
 
     npm i @types/node
+
+Generics
+
+    define classes and functions but pass in type like an argument
+
+    used when writing reusable code
