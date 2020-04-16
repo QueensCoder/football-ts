@@ -1,6 +1,6 @@
 import { CsvFileReader } from './CsvFileReader';
-import { dateStringToDate } from './utils';
-import { MatchResult } from './matchResult';
+import { dateStringToDate } from '../utils';
+import { MatchResult } from '../matchResult';
 
 // tuple that includes all the data for the array in the order that we need it in
 export type MatchData = [
