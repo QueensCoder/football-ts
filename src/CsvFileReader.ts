@@ -1,19 +1,14 @@
 import fs from 'fs';
 
-// type of data is to be determined by child class data input
-// T stands for generic type
-export abstract class CsvFileReader<T> {
-  data: T[] = [];
+export class CsvFileReader {
+  data: string[][] = [];
 
   constructor(public filename: string) {}
-
-  abstract mapRow(row: string[]): T;
 
   read(): void {
     this.data = fs
       .readFileSync(this.filename, { encoding: 'utf-8' })
       .split('\n')
-      .map((row: string): string[] => row.split(','))
-      .map(this.mapRow);
+      .map((row: string): string[] => row.split(','));
   }
 }
